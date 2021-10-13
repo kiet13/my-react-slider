@@ -7,6 +7,27 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .4s;
+
+}
+
+.Prev {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.Curr {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Next {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .PersonImage {
