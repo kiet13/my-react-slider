@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.Person {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.PersonImage {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.3rem solid $color-grey-3;
+  box-shadow: $dark-shadow;
+
+  @include respond(tab-land) {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+.PersonName {
+  text-transform: uppercase;
+  color: $color-brown;
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+}
+
+.PersonTitle {
+  text-transform: capitalize;
+  color: $color-grey-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.PersonQuote {
+  padding: 3rem 5rem;
+  line-height: 1.6;
+}
